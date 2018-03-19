@@ -1,0 +1,72 @@
+<ion-header>
+    <ion-navbar>
+      <ion-buttons end>
+        <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      </ion-buttons>
+      <ion-title style="position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 90px 1px;
+      width: 100%;
+      height: 100%;
+      text-align: center;">HOME</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content class="bodyClass" no-padding>
+  <div class="ion-card">
+  <ion-slides class="ion-card" slides autoplay="3000" loop="true" speed="500" class="slides" 
+  pager (ionSlideDidChange)="slideChanged()">
+    <ion-slide class="image-carousel">
+      <img class="imageClass" src="assets/imgs/slide1.jpg" alt="Product Image">
+    </ion-slide>
+    <ion-slide class="image-carousel" >
+      <img class="imageClass" src="assets/imgs/slide1.jpg" alt="Product Image">
+    </ion-slide>
+    <ion-slide class="image-carousel">
+      <img class="imageClass" src="assets/imgs/slide1.jpg" alt="Product Image">
+    </ion-slide>
+  </ion-slides>
+</div>
+
+<ion-grid >
+    <ion-row>
+      <ion-col col-6>
+          <div class="buttonPanel">
+            <button class="buttonMenus" ion-button full> <ion-icon class="ion-icon" name="map"></ion-icon></button>
+          </div>
+      </ion-col>
+      <ion-col col-6>
+          <div class="buttonPanel">
+              <button class="buttonMenus" ion-button full><ion-icon class="ion-icon" name="md-filing"></ion-icon></button>
+            </div>
+      </ion-col>
+      <ion-col col-6>
+          <div class="buttonPanel">
+              <button class="buttonMenus" ion-button full><ion-icon class="ion-icon" name="md-finger-print"></ion-icon></button>
+            </div>
+      </ion-col>
+      <ion-col col-6>
+          <div class="buttonPanel">
+              <button class="buttonMenus" ion-button full><ion-icon class="ion-icon" name="md-person"></ion-icon></button>
+            </div>
+      </ion-col>
+
+      <ion-col col-6>
+          <div class="buttonPanel">
+              <button class="buttonMenus" ion-button full><ion-icon class="ion-icon" name="heart"></ion-icon></button>
+            </div>
+      </ion-col>
+
+      <ion-col col-6>
+          <div class="buttonPanel">
+              <button class="buttonMenus" ion-button full><ion-icon class="ion-icon" name="logo-apple"></ion-icon></button>
+            </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

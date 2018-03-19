@@ -1,0 +1,175 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+// http://ionicframework.com/docs/theming/
+
+
+.hide-card {
+    padding-top: 25px;
+    margin-top: -10px;
+    //-webkit-box-shadow: none!important;
+    /*
+    background: skyblue;
+    */
+    }
+
+.item-inner{
+  padding-bottom: 12px;
+}
+.input-wrapper{
+  padding-bottom: -10px;
+  margin-bottom: -20px;
+}
+  .custom-avatar {
+    height: 30vw;
+    width: 30vw;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: rgb(68,68,68); /* Needed for IEs */
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+    zoom: 1;
+  }
+
+  .usernameDesign{
+    color: #B4886B;
+
+    font-weight: bold;
+    font-size: 25px !important;
+    font-family: "Times New Roman", Times, serif;
+    
+  }
+
+
+  .custom {
+    background-color: #353535 !important; /* This sets the background color*/
+   }
+   
+  /*Set the background to transparent for ion-item*/
+  .custom .item {
+    background-color: transparent;
+    border:none;   /*Removes all borders*/
+    border-top: 1px solid;   /*Top Border for each menu item*/
+    border-bottom:2px solid;   /*Bottom border for each menu item*/
+    border-color: #666;   /*Sets colors for top and bottom border*/
+    color: white;    /*Text color for each item*/
+
+    padding-left: 15px;
+    padding-top: -20px;
+
+    margin-top: -20px;
+  }
+   
+  /*Changes the border for the last item*/
+  .custom .item:last-child {
+    border-bottom: 1px solid #666;
+  }
+   
+  .custom .item-complex .item-content, .dark .item-radio .item-content {
+    background-color: transparent;
+  }
+   
+  /*Just makes the type white*/
+  .custom h2,
+  .custom h3,
+  .custom p,
+  .custom a {
+    color: white;  /*Text color for each item, overrides the color property above*/
+  }
+
+
+
+  /*
+    this is for a loading css
+  */
+
+  .dialodLoaderCss {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid rgb(157, 157, 173);
+    border-bottom: 16px solid rgb(157, 157, 173);
+    width: 70px;
+    height: 70px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+/* Container holding the image and the text */
+.loader_container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.loader_bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.loader_top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.loader_top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.loader_bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.loader_centered {
+  position: absolute;
+  top: 30%;
+  left: 36%;
+  transform: translate(-50%, -50%);
+}
+ion-loading.my-loading-class {
+  .loading-wrapper {
+    background: transparent;
+    box-shadow: none;
+  }
+}
