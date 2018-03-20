@@ -54,9 +54,9 @@ page-home {
         background-size: 100% 100% !important;
       }
       .buttonMenus{
-        height: 170px;
+        height: 120px;
         border-radius: 15px;
-        background: url('../assets/imgs/download.jpg');
+        background: url('../assets/imgs/btnback.jpg');
         background-repeat: no-repeat;
         background-size: 100% 100% !important;
 
@@ -66,12 +66,12 @@ page-home {
       }
       .buttonPanel{
         padding: 10px ;
-        height: 200px;  
+        height: 155px;  
         border-radius: 8px;
         border-style: outset ;
       }
       .ion-icon {
-        font-size: 130px; //Preferred size here
+        font-size: 100px; //Preferred size here
     }
 
 }

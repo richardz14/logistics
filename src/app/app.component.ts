@@ -4,11 +4,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { LoginPage } from '../pages/login/login';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = HomePage;//LoginPage
   @ViewChild(Nav) nav: Nav;
   public pages: Array<{title: string,ismenu: number, icon: string, component: any}>;
 
@@ -27,6 +28,7 @@ export class MyApp {
   loadSideMenu(){
     this.pages = [
       { title: 'Home',ismenu: 1,icon: 'home', component: HomePage },
+      { title: 'Logout',ismenu: 1,icon: 'ios-log-out-outline', component: HomePage },
     ];
   }
 
