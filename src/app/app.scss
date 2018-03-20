@@ -25,7 +25,9 @@
     background: skyblue;
     */
     }
-
+.sidebarHeaderCss{
+  background: url('../assets/imgs/download.jpg');
+}
 .item-inner{
   padding-bottom: 12px;
 }
@@ -63,7 +65,7 @@
 
 
   .custom {
-    background-color: #353535 !important; /* This sets the background color*/
+    background-color: #666 !important; /* This sets the background color*/
    }
    
   /*Set the background to transparent for ion-item*/
@@ -83,7 +85,7 @@
    
   /*Changes the border for the last item*/
   .custom .item:last-child {
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid #fff;
   }
    
   .custom .item-complex .item-content, .dark .item-radio .item-content {
