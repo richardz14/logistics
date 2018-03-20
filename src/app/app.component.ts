@@ -28,6 +28,8 @@ export class MyApp {
   loadSideMenu(){
     this.pages = [
       { title: 'Home',ismenu: 1,icon: 'home', component: HomePage },
+      { title: 'Profile',ismenu: 1,icon: 'information-circle', component: HomePage },
+      { title: 'Settings',ismenu: 1,icon: 'md-settings', component: HomePage },
       { title: 'Logout',ismenu: 1,icon: 'ios-log-out-outline', component: HomePage },
     ];
   }
