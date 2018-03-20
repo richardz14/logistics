@@ -15,10 +15,10 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class LoginPage {
   backgrounds = [
-    'assets/imgs/background/background-1.jpg',
-    'assets/imgs/background/background-2.jpg',
-    'assets/imgs/background/background-3.jpg',
-    'assets/imgs/background/background-4.jpg'
+    'assets/img/background/background-1.jpg',
+    'assets/img/background/background-2.jpg',
+    'assets/img/background/background-3.jpg',
+    'assets/img/background/background-4.jpg'
   ];
   public loginForm: any;
 
