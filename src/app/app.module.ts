@@ -16,6 +16,8 @@ import { ProfilePage } from '../pages/profile/profile';
 import { SettingsPage } from '../pages/settings/settings';
 import { TrucksPage } from '../pages/trucks/trucks';
 
+/** directives */
+import { HideHeaderDirective } from '../directives/hide-header/hide-header';
 @NgModule({
   declarations: [
     MyApp,
@@ -27,7 +29,8 @@ import { TrucksPage } from '../pages/trucks/trucks';
     MapTrackPage,
     ProfilePage,
     SettingsPage,
-    TrucksPage
+    TrucksPage,
+    HideHeaderDirective
   ],
   imports: [
     BrowserModule,

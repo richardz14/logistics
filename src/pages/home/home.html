@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header class="shrinkable">
     <ion-navbar>
       <ion-buttons end>
         <button ion-button menuToggle>
@@ -16,7 +16,7 @@
   </ion-header>
 
 
-<ion-content class="bodyClass" no-padding>
+<ion-content class="bodyClass" hide-header fullscreen no-padding>
   <div class="ion-card">
   <ion-slides class="ion-card" slides autoplay="3000" loop="true" speed="500" 
   pager (ionSlideDidChange)="slideChanged()">
