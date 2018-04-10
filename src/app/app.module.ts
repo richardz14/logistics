@@ -3,6 +3,10 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { HttpClient,HttpHeaders,HttpParams,HttpClientModule } from '@angular/common/http';
+
+/** plugins */
+import { IonicStorageModule } from '@ionic/storage';
 
 /** page components */
 import { MyApp } from './app.component';
@@ -18,6 +22,10 @@ import { TrucksPage } from '../pages/trucks/trucks';
 
 /** directives */
 import { HideHeaderDirective } from '../directives/hide-header/hide-header';
+
+/** providers */
+import { ApiSettingsProvider } from '../providers/api-settings/api-settings';
+import { ApiRequestProvider } from '../providers/api-request/api-request';
 @NgModule({
   declarations: [
     MyApp,
@@ -34,7 +42,12 @@ import { HideHeaderDirective } from '../directives/hide-header/hide-header';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule,
+    IonicStorageModule.forRoot({
+      name: '__mydb',
+         driverOrder: ['indexeddb', 'sqlite', 'websql']
+    }),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -52,7 +65,10 @@ import { HideHeaderDirective } from '../directives/hide-header/hide-header';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ApiSettingsProvider,
+    ApiRequestProvider,
+    HttpClientModule
   ]
 })
 export class AppModule {}
